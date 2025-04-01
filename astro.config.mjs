@@ -12,8 +12,8 @@ import remarkMath from "remark-math";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://github.com/TransMetaXis/',
-  base: '/nigel/',
+  site: 'https://exaltednature.com',
+  base: '',
   trailingSlash: "ignore",
   prefetch: {
     prefetchAll: true
