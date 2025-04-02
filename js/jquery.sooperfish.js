@@ -41,7 +41,11 @@ $.fn.sooperfish = function(op) {
     onHide    : function(){} //callback after hiding menu
   };
   
-
+window.addEventListener('resize', function() {
+    var canvas = document.getElementById('canvas');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
   //Merge default settings with o function parameter
   var o = $.extend({},sf.defaults,op);
   if (!o.sooperfishWidth) {
