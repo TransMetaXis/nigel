@@ -5,10 +5,6 @@ $(document).ready(function() {
 
 });
 
-var canvas = document.getElementById('gameCanvas');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
 function slideShow(speed) {
 
   // append an 'li' item to the 'ul' list for displaying the caption
