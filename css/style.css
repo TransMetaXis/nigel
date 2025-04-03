@@ -79,13 +79,13 @@ h5, h6 {
   letter-spacing: normal;
   padding: 0 0 15px 0;
 }
-iframecontainer {
+.iframecontainer {
   width: calc(1280px * 0.74);
   height: calc(720px * 0.74);
   position: relative;
 }
 
-myiframe {
+.iframecontainer iframe {
   width: 1280px;
   height: 720px;
   transform: scale(0.74);
