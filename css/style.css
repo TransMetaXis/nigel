@@ -79,7 +79,19 @@ h5, h6 {
   letter-spacing: normal;
   padding: 0 0 15px 0;
 }
+iframe-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
 
+game-iframe {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.74); /* Adjust this value as needed */
+    transform-origin: top left;
+}
 a, a:hover { 
   outline: none;
   text-decoration: underline;
