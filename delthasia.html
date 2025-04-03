@@ -62,8 +62,14 @@
       </nav>
     </header>
     
-        <iframe src="https://transmetaxis.github.io/DelthasiaHTML/index.html" width="950" height="534" style="border: none;" scrolling="no"></iframe>
-    <canvas id="myCanvas" width="1280" height="720"></canvas>
+      <iframe id="myiframe" src="https://transmetaxis.github.io/DelthasiaHTML/index.html" width="950" height="534" style="border: none;" scrolling="no"></iframe>
+        <script>
+          window.onload = function() {
+            var iframe = document.getElementById("myiframe");
+            iframe.width = iframe.contentWindow.document.body.scrollWidth;
+            iframe.height = iframe.contentWindow.document.body.scrollHeight;
+          }
+        </script>
     <div id="site_content">
       <div id="sidebar_container">
         <div class="sidebar">
