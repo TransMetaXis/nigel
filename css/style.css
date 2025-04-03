@@ -87,8 +87,6 @@ iframecontainer {
 }
 
 myiframe {
-    width: 100%;
-    height: 100%;
     transform: scale(0.74); /* Adjust this value as needed */
     transform-origin: top left;
 }
