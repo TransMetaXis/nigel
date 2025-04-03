@@ -61,26 +61,9 @@
         </ul>
       </nav>
     </header>
-    <div id="iframecontainer">
-      <iframe id="myiframe" src="https://transmetaxis.github.io/DelthasiaHTML/index.html" width="1280" height="720" style="border: none;" scrolling="no"></iframe>
+    <div id="myiframe">
+      <iframe src="https://transmetaxis.github.io/DelthasiaHTML/index.html" width="1280" height="720" style="border: none;" scrolling="no"></iframe>
     </div>  
-      <script>
-        function adjustIframeContent() {
-            var iframe = document.getElementById('myiframe');
-            if (iframe.contentWindow && iframe.contentWindow.document) {
-                var iframeDoc = iframe.contentWindow.document;
-                var contentWidth = iframeDoc.body.scrollWidth;
-                var contentHeight = iframeDoc.body.scrollHeight;
-                iframe.style.width = contentWidth + 'px';
-                iframe.style.height = contentHeight + 'px';
-            }
-        }
-
-        window.onload = function() {
-            adjustIframeContent();
-            window.addEventListener('resize', adjustIframeContent);
-        };
-    </script>
     <div id="site_content">
       <div id="sidebar_container">
         <div class="sidebar">
