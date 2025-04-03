@@ -80,15 +80,19 @@ h5, h6 {
   padding: 0 0 15px 0;
 }
 iframecontainer {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+  width: calc(1280px * 0.74);
+  height: calc(720px * 0.74);
+  position: relative;
 }
 
 myiframe {
-    transform: scale(0.74); /* Adjust this value as needed */
-    transform-origin: top left;
+  width: 1280px;
+  height: 720px;
+  transform: scale(0.74);
+  transform-origin: 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 a, a:hover { 
   outline: none;
