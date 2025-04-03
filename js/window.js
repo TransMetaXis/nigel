@@ -1,14 +1,10 @@
-/*window.addEventListener('resize', function() {
-    var canvas = document.getElementById('canvas');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
-export const fitRectIntoContainer = (rectWidth, rectHeight, containerWidth, containerHeight) => {
-    const widthRatio = containerWidth / rectWidth; // ratio container width to rect width
-    const heightRatio = containerHeight / rectHeight; // ratio container height to rect height
-    const ratio = Math.min(widthRatio, heightRatio); // take the smaller ratio
-    return {
-        width: rectWidth * ratio,
-        height: rectHeight * ratio,
-    };
-};
+// Selecting the iframe element
+var frame = document.getElementById("yourIframeId");
+
+// Adjusting the iframe height onload event
+frame.onload = function() {
+    // Set the height of the iframe as the height of the iframe content
+    frame.style.height = frame.contentWindow.document.body.scrollHeight + 'px';
+    // Set the width of the iframe as the width of the iframe content
+    frame.style.width = frame.contentWindow.document.body.scrollWidth + 'px';
+}
